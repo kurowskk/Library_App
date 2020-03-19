@@ -45,7 +45,7 @@ namespace Library_App
             _libApp.Run();
             _libApp.ShowMainMenu();
 
-            ShowMainMenu()
+            ShowMainMenu();
             MainMenuOption();
             int userChoice;
             userChoice = Console.ReadKey();
