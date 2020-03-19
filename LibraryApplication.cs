@@ -25,13 +25,7 @@ namespace Library_App
         ExitBookMenu
     }
 
-    ///this enumeration creates an option of 3 formats of books in the library.
-    enum BookType
-    {
-        Paper = 1,
-        Digital,
-        Audio
-    }
+
 
     /// <summary>
     /// The main class of the Library application. Defines the entry point and creat the object of library.
@@ -47,6 +41,11 @@ namespace Library_App
         /// </summary>
         static void Main(string[] args) 
         {
+            LibraryApplication _libApp  = new LibraryApplication();
+            _libApp.Run();
+            _libApp.ShowMainMenu();
+
+            ShowMainMenu()
             MainMenuOption();
             int userChoice;
             userChoice = Console.ReadKey();
@@ -89,6 +88,7 @@ namespace Library_App
         private void Run()
         {
             Console.WriteLine();
+            _library = new Library()
         }
 
         /// <summary>

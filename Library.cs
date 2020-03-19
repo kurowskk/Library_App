@@ -5,6 +5,14 @@ using System.Text;
 namespace Library_App
 {
 
+    ///this enumeration creates an option of 3 formats of books in the library.
+    enum BookType
+    {
+        Paper = 1,
+        Digital,
+        Audio
+    }
+
     /// <summary>
     /// Class handling librery operations such us reservations, returns, checkin availibility etc.
     /// Provides a list of library assets and manages them.
